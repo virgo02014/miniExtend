@@ -1,0 +1,21 @@
+/**app.wxss**/
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix::after {
+    height: 0;
+    content: " ";
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+@import "./icon/iconfont.wxss";
