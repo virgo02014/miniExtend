@@ -2,7 +2,7 @@
 //获取应用实例
 var app = getApp();
 Page({
-  data: {
+  data: { // 参与页面渲染的数据
     userInfo: {},
     imgalist: ['http://ou73ndm0m.bkt.clouddn.com/jcjy.jpeg',
                'http://ou73ndm0m.bkt.clouddn.com/wx.jpg']
@@ -14,6 +14,7 @@ Page({
     });
   },
   onLoad: function () {
+    // 页面渲染后 执行
     var that = this;
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){

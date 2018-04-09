@@ -1,6 +1,8 @@
 //app.js
 App({
   onLaunch: function () {
+    // 小程序启动之后 触发
+
     //调用API从本地缓存中获取数据
     //getStorageSync: 从本地缓存中同步获取指定 key 对应的内容。
     var logs = wx.getStorageSync('logs') || [];
