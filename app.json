@@ -5,8 +5,8 @@
   ],
   "window":{
     "backgroundColor":"#fff",
-    "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "light",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": false
   },

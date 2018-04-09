@@ -1,30 +1,31 @@
 <!--index.wxml-->
-<view class="header">
-  <view>
-    <view class="row">
-      <view>
-        <text class="title">银川锦程教育</text>
+<view class="container">
+  <view class="header">
+    <view>
+      <view class="row">
+        <view>
+          <text class="title">银川锦程教育</text>
+        </view>
+        <view>
+          <text class="subTitle">教育培训</text>
+        </view>
       </view>
-      <view>
-        <text class="subTitle">教育 · 教育信息服务</text>
+    </view>
+    <view>
+      <image class="avatar" src="http://ou73ndm0m.bkt.clouddn.com/jcjy.jpeg" background-size="cover"></image>
+    </view>
+  </view>
+
+  <view class="content">
+    <view><i class="icon iconfont icon-shizhong"></i> 9:00~22:00</view>
+    <view hover-class="weui-cell_active" data-reply-phone="182-9509-3146" bindtap="phoneCall">
+      <view class="weui-cell__bd"><i class="icon iconfont icon-dianhua"></i> 182-9509-3146</view>
+    </view>
+    <view><i class="icon iconfont icon-xiangpian"></i> 门店照片</view>
+    <view class="clearfix">
+      <view wx:for="{{imgalist}}" wx:for-item="image" wx:key="*this" class="previewimg">
+        <image src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
       </view>
     </view>
   </view>
-  <view>
-    <image class="avatar" src="/image/jcjy.jpeg" background-size="cover"></image>
-  </view>
 </view>
-
-<view class="content">
-  <view><i class="icon iconfont icon-shizhong"></i> 9:00~22:00</view>
-  <view hover-class="weui-cell_active" data-reply-phone="182-9509-3146" bindtap="phoneCall">
-    <view class="weui-cell__bd"><i class="icon iconfont icon-dianhua"></i> 182-9509-3146</view>
-  </view>
-  <view><i class="icon iconfont icon-xiangpian"></i> 门店照片</view>
-  <view class="clearfix">
-    <view wx:for="{{imgalist}}" wx:for-item="image" wx:key="*this" class="previewimg">
-      <image src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
-    </view>
-  </view>
-</view>
-

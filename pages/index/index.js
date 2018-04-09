@@ -4,8 +4,8 @@ var app = getApp();
 Page({
   data: {
     userInfo: {},
-    imgalist: ['../../image/jcjy.jpeg',
-               '../../image/wx.jpg']
+    imgalist: ['http://ou73ndm0m.bkt.clouddn.com/jcjy.jpeg',
+               'http://ou73ndm0m.bkt.clouddn.com/wx.jpg']
   },
   //事件处理函数
   bindViewTap: function() {
